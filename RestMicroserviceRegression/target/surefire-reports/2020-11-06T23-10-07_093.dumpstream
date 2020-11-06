@@ -1,0 +1,15 @@
+# Created at 2020-11-06T23:10:07.094
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2020-11-06T23:10:07.095
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.ReflectionUtils (file:/C:/Users/Ashwin%20Nayak/.m2/repository/org/codehaus/groovy/groovy/3.0.3/groovy-3.0.3.jar) to constructor java.lang.AssertionError(java.lang.String)
+
+# Created at 2020-11-06T23:10:07.096
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.ReflectionUtils
+
+# Created at 2020-11-06T23:10:07.097
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2020-11-06T23:10:07.099
+WARNING: All illegal access operations will be denied in a future release
+

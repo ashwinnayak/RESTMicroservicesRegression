@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="7" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="34" time="32.215">
+    <testcase classname="Comment Tests: Test Comment Endpoint" name="Create a Comment using a post request" time="7.257">
+        <system-out>
+            <![CDATA[When I perform post operation to create a Comment...........................passed
+Then the status response code must be 201...................................passed
+And the returned post data must contain the Id..............................passed
+And the status in the body must be "Created"................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Comment Tests: Test Comment Endpoint" name="Validate Schema of a Comment" time="3.171">
+        <system-out>
+            <![CDATA[When I perform GET operation to get Comment data by id "3"..................passed
+Then I should get a valid schema And body parameters should be valid........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Comment Tests: Test Comment Endpoint" name="Validate Schema of a Comment 2" time="0.934">
+        <system-out>
+            <![CDATA[When I perform GET operation to get Comment data by id "5"..................passed
+Then I should get a valid schema And body parameters should be valid........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Comment Tests: Test Comment Endpoint" name="Validate the number of records in response of Comments" time="0.769">
+        <system-out>
+            <![CDATA[When I perform GET operation to get All Comments............................passed
+Then the status response code must be 200...................................passed
+And the response should have 500 number of records..........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Comment Tests: Test Comment Endpoint" name="Delete comment with id" time="0.872">
+        <system-out>
+            <![CDATA[When I perform delete operation on a comment with id "3"....................passed
+Then the status response code must be 200...................................passed
+And the status in the body must be "OK".....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Comment Tests: Test Comment Endpoint" name="Delete comment with id 2" time="0.784">
+        <system-out>
+            <![CDATA[When I perform delete operation on a comment with id "5"....................passed
+Then the status response code must be 200...................................passed
+And the status in the body must be "OK".....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Comment Tests: Test Comment Endpoint" name="Test delete Comment with invalid/null id" time="0.776">
+        <system-out>
+            <![CDATA[When I perform delete operation on a comment with id "".....................passed
+Then an error status code must be returned..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Comment Tests: Test Comment Endpoint" name="Test delete Comment with invalid/null id 2" time="0.625">
+        <failure message="1 expectation failed.&#10;Expected status code (&lt;404&gt; or &lt;400&gt; or &lt;301&gt; or &lt;500&gt;) but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">
+            <![CDATA[When I perform delete operation on a comment with id "%$^#".................passed
+Then an error status code must be returned..................................failed
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+Expected status code (<404> or <400> or <301> or <500>) but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned(stepDefLibrary.java:191)
+	at ✽.an error status code must be returned(classpath:features/verifyComments.feature:66)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Create a Post using a post request" time="1.008">
+        <system-out>
+            <![CDATA[When I perform post operation to create a Post..............................passed
+Then the status response code must be 201...................................passed
+And the returned post data must contain the Id..............................passed
+And the status in the body must be "Created"................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Validate Schema of a Post record" time="0.342">
+        <system-out>
+            <![CDATA[When I perform GET operation to get Post data by id "3".....................passed
+Then I should get a valid schema And body parameters in Post response.......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Validate Schema of a Post record 2" time="0.349">
+        <system-out>
+            <![CDATA[When I perform GET operation to get Post data by id "5".....................passed
+Then I should get a valid schema And body parameters in Post response.......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Validate the number of records in response of Posts" time="0.327">
+        <system-out>
+            <![CDATA[When I perform GET operation to get All Posts...............................passed
+Then the status response code must be 200...................................passed
+And the response should have 100 number of records..........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Create a Post with invalid parameters" time="0.846">
+        <failure message="1 expectation failed.&#10;Expected status code is &lt;400&gt; but was &lt;201&gt;.&#10;" type="java.lang.AssertionError">
+            <![CDATA[When I perform post operation to create a post record with invalid parameters.passed
+Then the status response code must be 400...................................failed
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+Expected status code is <400> but was <201>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(stepDefLibrary.java:85)
+	at ✽.the status response code must be 400(classpath:features/verifyPosts.feature:45)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Create a Post with with null parameters" time="0.804">
+        <failure message="1 expectation failed.&#10;Expected status code is &lt;400&gt; but was &lt;201&gt;.&#10;" type="java.lang.AssertionError">
+            <![CDATA[When I perform post operation to create a Post with null parameters.........passed
+Then the status response code must be 400...................................failed
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+Expected status code is <400> but was <201>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(stepDefLibrary.java:85)
+	at ✽.the status response code must be 400(classpath:features/verifyPosts.feature:51)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Update A Post with valid data" time="1.132">
+        <system-out>
+            <![CDATA[When I perform put operation to update a Post with id "23"..................passed
+Then the status response code must be 200...................................passed
+And the status in the body must be "OK".....................................passed
+And the returned updated data must contain the input body data "23".........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Update a Post with invalid or null id in path parameter" time="0.862">
+        <system-out>
+            <![CDATA[When I perform put operation to update a Post with invalid id "*&^".........passed
+Then an error status code must be returned..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Update a Post with invalid or null id in path parameter 2" time="0.763">
+        <system-out>
+            <![CDATA[When I perform put operation to update a Post with invalid id ""............passed
+Then an error status code must be returned..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Update a Post with valid id and invalid json data" time="0.782">
+        <failure message="1 expectation failed.&#10;Expected status code (&lt;404&gt; or &lt;400&gt; or &lt;301&gt; or &lt;500&gt;) but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">
+            <![CDATA[When I perform put operation to update a Post for Valid id "21" And with invalid json data.passed
+Then an error status code must be returned..................................failed
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+Expected status code (<404> or <400> or <301> or <500>) but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned(stepDefLibrary.java:191)
+	at ✽.an error status code must be returned(classpath:features/verifyPosts.feature:77)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Posts Tests: Test all the POST/PUT requests for creating Posts" name="Update a Post with valid id and null json data" time="0.777">
+        <failure message="1 expectation failed.&#10;Expected status code (&lt;404&gt; or &lt;400&gt; or &lt;301&gt; or &lt;500&gt;) but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">
+            <![CDATA[When I perform put operation to update a Post for id "21" with null parameters in json data.passed
+Then an error status code must be returned..................................failed
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+Expected status code (<404> or <400> or <301> or <500>) but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned(stepDefLibrary.java:191)
+	at ✽.an error status code must be returned(classpath:features/verifyPosts.feature:86)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Get all User data" time="0.402">
+        <system-out>
+            <![CDATA[When I perform GET operation to get all User data...........................passed
+Then the status response code must be 200...................................passed
+And the status in the body must be "OK".....................................passed
+And all the User data must be returned......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Validate the count of records in response of All Users" time="0.788">
+        <system-out>
+            <![CDATA[When I perform GET operation to get all User data...........................passed
+Then the status response code must be 200...................................passed
+And the response should have 10 number of records...........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Validate Schema of a User record" time="0.313">
+        <system-out>
+            <![CDATA[When I perform GET operation to get User data with id "3"...................passed
+Then I should get a valid schema And body parameters in User response.......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Validate Schema of a User record 2" time="0.298">
+        <system-out>
+            <![CDATA[When I perform GET operation to get User data with id "5"...................passed
+Then I should get a valid schema And body parameters in User response.......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Update A User's Details with valid data" time="0.819">
+        <system-out>
+            <![CDATA[When I perform put operation to update User's detail with id "1"............passed
+Then the status response code must be 200...................................passed
+And the status in the body must be "OK".....................................passed
+And the returned updated data must contain the input body data "1"..........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Execute Patch on certain params of the User's Details with valid data" time="0.77">
+        <system-out>
+            <![CDATA[When I perform PATCH operation to update some of the User's detail with id "3".passed
+Then the status response code must be 200...................................passed
+And the status in the body must be "OK".....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Update A User's Details with Invalid ID" time="0.766">
+        <system-out>
+            <![CDATA[When I perform put operation to update User's detail with id "89"...........passed
+Then an error status code must be returned..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Update A User's Details with Invalid data" time="0.819">
+        <failure message="1 expectation failed.&#10;Expected status code (&lt;404&gt; or &lt;400&gt; or &lt;301&gt; or &lt;500&gt;) but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">
+            <![CDATA[When I perform put operation to update User's detail with invalid data and valid id "4".passed
+Then an error status code must be returned..................................failed
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+Expected status code (<404> or <400> or <301> or <500>) but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor152.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned(stepDefLibrary.java:191)
+	at ✽.an error status code must be returned(classpath:features/verifyUsers.feature:72)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Update A User's Details with All Null data" time="0.765">
+        <failure message="1 expectation failed.&#10;Expected status code (&lt;404&gt; or &lt;400&gt; or &lt;301&gt; or &lt;500&gt;) but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">
+            <![CDATA[When I perform put operation to update User's detail with All Null data but valid id "4".passed
+Then an error status code must be returned..................................failed
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+Expected status code (<404> or <400> or <301> or <500>) but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor152.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned(stepDefLibrary.java:191)
+	at ✽.an error status code must be returned(classpath:features/verifyUsers.feature:81)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Get a single User data using id" time="0.432">
+        <system-out>
+            <![CDATA[When I perform GET operation to get a single User data from id "1"..........passed
+Then the status response code must be 200...................................passed
+And the status in the body must be "OK".....................................passed
+And the User data must be returned..........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="Get a single User data using id 2" time="0.39">
+        <system-out>
+            <![CDATA[When I perform GET operation to get a single User data from id "3"..........passed
+Then the status response code must be 200...................................passed
+And the status in the body must be "OK".....................................passed
+And the User data must be returned..........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="When id consisting of alphabets/non existing ids are passed to the get API request for single employee" time="0.28">
+        <system-out>
+            <![CDATA[When I perform GET operation to get a single User data with invalid id "test".passed
+Then an error status code must be returned..................................passed
+And the status in the body must be "Not Found"..............................passed
+And the data returned must be null..........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="When id consisting of alphabets/non existing ids are passed to the get API request for single employee 2" time="0.307">
+        <system-out>
+            <![CDATA[When I perform GET operation to get a single User data with invalid id "100000789".passed
+Then an error status code must be returned..................................passed
+And the status in the body must be "Not Found"..............................passed
+And the data returned must be null..........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="When special character are passed as ID in the get API request for single User" time="0.3">
+        <system-out>
+            <![CDATA[When I perform GET operation to get a single User data from id "#%?"........passed
+Then an error status code must be returned..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users Tests: Test all the GET requests for User data" name="When special character are passed as ID in the get API request for single User 2" time="0.275">
+        <system-out>
+            <![CDATA[When I perform GET operation to get a single User data from id "(*&&^*^%^"..passed
+Then an error status code must be returned..................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

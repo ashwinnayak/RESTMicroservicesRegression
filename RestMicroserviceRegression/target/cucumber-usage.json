@@ -1,0 +1,966 @@
+[
+  {
+    "source": "I perform post operation to create a Comment",
+    "steps": [
+      {
+        "name": "I perform post operation to create a Comment",
+        "aggregatedDurations": {
+          "median": 5.2408971,
+          "average": 5.2408971
+        },
+        "durations": [
+          {
+            "duration": 5.2408971,
+            "location": "classpath:features/verifyComments.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the status response code must be {int}",
+    "steps": [
+      {
+        "name": "the status response code must be 201",
+        "aggregatedDurations": {
+          "median": 0.02498645,
+          "average": 0.02498645
+        },
+        "durations": [
+          {
+            "duration": 0.0499729,
+            "location": "classpath:features/verifyComments.feature:6"
+          },
+          {
+            "duration": 0.0,
+            "location": "classpath:features/verifyPosts.feature:6"
+          }
+        ]
+      },
+      {
+        "name": "the status response code must be 200",
+        "aggregatedDurations": {
+          "median": 0.0010061,
+          "average": 0.002268118
+        },
+        "durations": [
+          {
+            "duration": 0.0019919,
+            "location": "classpath:features/verifyComments.feature:22"
+          },
+          {
+            "duration": 0.0019993,
+            "location": "classpath:features/verifyComments.feature:55"
+          },
+          {
+            "duration": 0.0029983,
+            "location": "classpath:features/verifyComments.feature:55"
+          },
+          {
+            "duration": 0.0,
+            "location": "classpath:features/verifyPosts.feature:22"
+          },
+          {
+            "duration": 9.968E-4,
+            "location": "classpath:features/verifyPosts.feature:56"
+          },
+          {
+            "duration": 0.0019991,
+            "location": "classpath:features/verifyUsers.feature:6"
+          },
+          {
+            "duration": 9.985E-4,
+            "location": "classpath:features/verifyUsers.feature:13"
+          },
+          {
+            "duration": 0.0010061,
+            "location": "classpath:features/verifyUsers.feature:44"
+          },
+          {
+            "duration": 9.941E-4,
+            "location": "classpath:features/verifyUsers.feature:54"
+          },
+          {
+            "duration": 9.697E-4,
+            "location": "classpath:features/verifyUsers.feature:89"
+          },
+          {
+            "duration": 0.0109955,
+            "location": "classpath:features/verifyUsers.feature:89"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the returned post data must contain the Id",
+    "steps": [
+      {
+        "name": "the returned post data must contain the Id",
+        "aggregatedDurations": {
+          "median": 0.90404575,
+          "average": 0.90404575
+        },
+        "durations": [
+          {
+            "duration": 1.7711119,
+            "location": "classpath:features/verifyComments.feature:7"
+          },
+          {
+            "duration": 0.0369796,
+            "location": "classpath:features/verifyPosts.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the status in the body must be {string}",
+    "steps": [
+      {
+        "name": "the status in the body must be \"Created\"",
+        "aggregatedDurations": {
+          "median": 4.9925E-4,
+          "average": 4.9925E-4
+        },
+        "durations": [
+          {
+            "duration": 9.985E-4,
+            "location": "classpath:features/verifyComments.feature:8"
+          },
+          {
+            "duration": 0.0,
+            "location": "classpath:features/verifyPosts.feature:8"
+          }
+        ]
+      },
+      {
+        "name": "the status in the body must be \"OK\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 3.74387E-4
+        },
+        "durations": [
+          {
+            "duration": 9.998E-4,
+            "location": "classpath:features/verifyComments.feature:56"
+          },
+          {
+            "duration": 0.0,
+            "location": "classpath:features/verifyComments.feature:56"
+          },
+          {
+            "duration": 9.986E-4,
+            "location": "classpath:features/verifyPosts.feature:57"
+          },
+          {
+            "duration": 0.0,
+            "location": "classpath:features/verifyUsers.feature:7"
+          },
+          {
+            "duration": 0.0,
+            "location": "classpath:features/verifyUsers.feature:45"
+          },
+          {
+            "duration": 0.0,
+            "location": "classpath:features/verifyUsers.feature:55"
+          },
+          {
+            "duration": 0.0,
+            "location": "classpath:features/verifyUsers.feature:90"
+          },
+          {
+            "duration": 9.967E-4,
+            "location": "classpath:features/verifyUsers.feature:90"
+          }
+        ]
+      },
+      {
+        "name": "the status in the body must be \"Not Found\"",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "classpath:features/verifyUsers.feature:101"
+          },
+          {
+            "duration": 0.0,
+            "location": "classpath:features/verifyUsers.feature:101"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform GET operation to get Comment data by id {string}",
+    "steps": [
+      {
+        "name": "I perform GET operation to get Comment data by id \"3\"",
+        "aggregatedDurations": {
+          "median": 0.9669228,
+          "average": 0.9669228
+        },
+        "durations": [
+          {
+            "duration": 0.9669228,
+            "location": "classpath:features/verifyComments.feature:12"
+          }
+        ]
+      },
+      {
+        "name": "I perform GET operation to get Comment data by id \"5\"",
+        "aggregatedDurations": {
+          "median": 0.8800705,
+          "average": 0.8800705
+        },
+        "durations": [
+          {
+            "duration": 0.8800705,
+            "location": "classpath:features/verifyComments.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should get a valid schema And body parameters should be valid",
+    "steps": [
+      {
+        "name": "I should get a valid schema And body parameters should be valid",
+        "aggregatedDurations": {
+          "median": 1.1188002,
+          "average": 1.1188002
+        },
+        "durations": [
+          {
+            "duration": 2.1976226,
+            "location": "classpath:features/verifyComments.feature:13"
+          },
+          {
+            "duration": 0.0399778,
+            "location": "classpath:features/verifyComments.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform GET operation to get All Comments",
+    "steps": [
+      {
+        "name": "I perform GET operation to get All Comments",
+        "aggregatedDurations": {
+          "median": 0.352301,
+          "average": 0.352301
+        },
+        "durations": [
+          {
+            "duration": 0.352301,
+            "location": "classpath:features/verifyComments.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the response should have {int} number of records",
+    "steps": [
+      {
+        "name": "the response should have 500 number of records",
+        "aggregatedDurations": {
+          "median": 0.4117522,
+          "average": 0.4117522
+        },
+        "durations": [
+          {
+            "duration": 0.4117522,
+            "location": "classpath:features/verifyComments.feature:23"
+          }
+        ]
+      },
+      {
+        "name": "the response should have 100 number of records",
+        "aggregatedDurations": {
+          "median": 0.0539695,
+          "average": 0.0539695
+        },
+        "durations": [
+          {
+            "duration": 0.0539695,
+            "location": "classpath:features/verifyPosts.feature:23"
+          }
+        ]
+      },
+      {
+        "name": "the response should have 10 number of records",
+        "aggregatedDurations": {
+          "median": 0.037977,
+          "average": 0.037977
+        },
+        "durations": [
+          {
+            "duration": 0.037977,
+            "location": "classpath:features/verifyUsers.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform delete operation on a comment with id {string}",
+    "steps": [
+      {
+        "name": "I perform delete operation on a comment with id \"3\"",
+        "aggregatedDurations": {
+          "median": 0.8657815,
+          "average": 0.8657815
+        },
+        "durations": [
+          {
+            "duration": 0.8657815,
+            "location": "classpath:features/verifyComments.feature:54"
+          }
+        ]
+      },
+      {
+        "name": "I perform delete operation on a comment with id \"5\"",
+        "aggregatedDurations": {
+          "median": 0.7786891,
+          "average": 0.7786891
+        },
+        "durations": [
+          {
+            "duration": 0.7786891,
+            "location": "classpath:features/verifyComments.feature:54"
+          }
+        ]
+      },
+      {
+        "name": "I perform delete operation on a comment with id \"\"",
+        "aggregatedDurations": {
+          "median": 0.7595637,
+          "average": 0.7595637
+        },
+        "durations": [
+          {
+            "duration": 0.7595637,
+            "location": "classpath:features/verifyComments.feature:65"
+          }
+        ]
+      },
+      {
+        "name": "I perform delete operation on a comment with id \"%$^#\"",
+        "aggregatedDurations": {
+          "median": 0.5449455,
+          "average": 0.5449455
+        },
+        "durations": [
+          {
+            "duration": 0.5449455,
+            "location": "classpath:features/verifyComments.feature:65"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "an error status code must be returned",
+    "steps": [
+      {
+        "name": "an error status code must be returned",
+        "aggregatedDurations": {
+          "median": 0.00100305,
+          "average": 0.004247937
+        },
+        "durations": [
+          {
+            "duration": 0.0159921,
+            "location": "classpath:features/verifyComments.feature:66"
+          },
+          {
+            "duration": 0.0109928,
+            "location": "classpath:features/verifyPosts.feature:66"
+          },
+          {
+            "duration": 0.001,
+            "location": "classpath:features/verifyPosts.feature:66"
+          },
+          {
+            "duration": 0.001996,
+            "location": "classpath:features/verifyUsers.feature:63"
+          },
+          {
+            "duration": 9.978E-4,
+            "location": "classpath:features/verifyUsers.feature:100"
+          },
+          {
+            "duration": 0.0010004,
+            "location": "classpath:features/verifyUsers.feature:100"
+          },
+          {
+            "duration": 9.987E-4,
+            "location": "classpath:features/verifyUsers.feature:111"
+          },
+          {
+            "duration": 0.0010057,
+            "location": "classpath:features/verifyUsers.feature:111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform post operation to create a Post",
+    "steps": [
+      {
+        "name": "I perform post operation to create a Post",
+        "aggregatedDurations": {
+          "median": 0.9284669,
+          "average": 0.9284669
+        },
+        "durations": [
+          {
+            "duration": 0.9284669,
+            "location": "classpath:features/verifyPosts.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform GET operation to get Post data by id {string}",
+    "steps": [
+      {
+        "name": "I perform GET operation to get Post data by id \"3\"",
+        "aggregatedDurations": {
+          "median": 0.3158198,
+          "average": 0.3158198
+        },
+        "durations": [
+          {
+            "duration": 0.3158198,
+            "location": "classpath:features/verifyPosts.feature:12"
+          }
+        ]
+      },
+      {
+        "name": "I perform GET operation to get Post data by id \"5\"",
+        "aggregatedDurations": {
+          "median": 0.3328088,
+          "average": 0.3328088
+        },
+        "durations": [
+          {
+            "duration": 0.3328088,
+            "location": "classpath:features/verifyPosts.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should get a valid schema And body parameters in Post response",
+    "steps": [
+      {
+        "name": "I should get a valid schema And body parameters in Post response",
+        "aggregatedDurations": {
+          "median": 0.0174897,
+          "average": 0.0174897
+        },
+        "durations": [
+          {
+            "duration": 0.022987,
+            "location": "classpath:features/verifyPosts.feature:13"
+          },
+          {
+            "duration": 0.0119924,
+            "location": "classpath:features/verifyPosts.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform GET operation to get All Posts",
+    "steps": [
+      {
+        "name": "I perform GET operation to get All Posts",
+        "aggregatedDurations": {
+          "median": 0.2689109,
+          "average": 0.2689109
+        },
+        "durations": [
+          {
+            "duration": 0.2689109,
+            "location": "classpath:features/verifyPosts.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform post operation to create a post record with invalid parameters",
+    "steps": [
+      {
+        "name": "I perform post operation to create a post record with invalid parameters",
+        "aggregatedDurations": {
+          "median": 0.8037026,
+          "average": 0.8037026
+        },
+        "durations": [
+          {
+            "duration": 0.8037026,
+            "location": "classpath:features/verifyPosts.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform post operation to create a Post with null parameters",
+    "steps": [
+      {
+        "name": "I perform post operation to create a Post with null parameters",
+        "aggregatedDurations": {
+          "median": 0.7925429,
+          "average": 0.7925429
+        },
+        "durations": [
+          {
+            "duration": 0.7925429,
+            "location": "classpath:features/verifyPosts.feature:50"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform put operation to update a Post with id {string}",
+    "steps": [
+      {
+        "name": "I perform put operation to update a Post with id \"23\"",
+        "aggregatedDurations": {
+          "median": 1.0974859,
+          "average": 1.0974859
+        },
+        "durations": [
+          {
+            "duration": 1.0974859,
+            "location": "classpath:features/verifyPosts.feature:55"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the returned updated data must contain the input body data {string}",
+    "steps": [
+      {
+        "name": "the returned updated data must contain the input body data \"23\"",
+        "aggregatedDurations": {
+          "median": 0.0309823,
+          "average": 0.0309823
+        },
+        "durations": [
+          {
+            "duration": 0.0309823,
+            "location": "classpath:features/verifyPosts.feature:58"
+          }
+        ]
+      },
+      {
+        "name": "the returned updated data must contain the input body data \"1\"",
+        "aggregatedDurations": {
+          "median": 0.0429786,
+          "average": 0.0429786
+        },
+        "durations": [
+          {
+            "duration": 0.0429786,
+            "location": "classpath:features/verifyUsers.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform put operation to update a Post with invalid id {string}",
+    "steps": [
+      {
+        "name": "I perform put operation to update a Post with invalid id \"*\u0026^\"",
+        "aggregatedDurations": {
+          "median": 0.8488482,
+          "average": 0.8488482
+        },
+        "durations": [
+          {
+            "duration": 0.8488482,
+            "location": "classpath:features/verifyPosts.feature:65"
+          }
+        ]
+      },
+      {
+        "name": "I perform put operation to update a Post with invalid id \"\"",
+        "aggregatedDurations": {
+          "median": 0.7605605,
+          "average": 0.7605605
+        },
+        "durations": [
+          {
+            "duration": 0.7605605,
+            "location": "classpath:features/verifyPosts.feature:65"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform put operation to update a Post for Valid id {string} And with invalid json data",
+    "steps": [
+      {
+        "name": "I perform put operation to update a Post for Valid id \"21\" And with invalid json data",
+        "aggregatedDurations": {
+          "median": 0.7708073,
+          "average": 0.7708073
+        },
+        "durations": [
+          {
+            "duration": 0.7708073,
+            "location": "classpath:features/verifyPosts.feature:76"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform put operation to update a Post for id {string} with null parameters in json data",
+    "steps": [
+      {
+        "name": "I perform put operation to update a Post for id \"21\" with null parameters in json data",
+        "aggregatedDurations": {
+          "median": 0.7717193,
+          "average": 0.7717193
+        },
+        "durations": [
+          {
+            "duration": 0.7717193,
+            "location": "classpath:features/verifyPosts.feature:85"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform GET operation to get all User data",
+    "steps": [
+      {
+        "name": "I perform GET operation to get all User data",
+        "aggregatedDurations": {
+          "median": 0.50945755,
+          "average": 0.50945755
+        },
+        "durations": [
+          {
+            "duration": 0.2728437,
+            "location": "classpath:features/verifyUsers.feature:5"
+          },
+          {
+            "duration": 0.7460714,
+            "location": "classpath:features/verifyUsers.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "all the User data must be returned",
+    "steps": [
+      {
+        "name": "all the User data must be returned",
+        "aggregatedDurations": {
+          "median": 0.1149324,
+          "average": 0.1149324
+        },
+        "durations": [
+          {
+            "duration": 0.1149324,
+            "location": "classpath:features/verifyUsers.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform GET operation to get User data with id {string}",
+    "steps": [
+      {
+        "name": "I perform GET operation to get User data with id \"3\"",
+        "aggregatedDurations": {
+          "median": 0.2868352,
+          "average": 0.2868352
+        },
+        "durations": [
+          {
+            "duration": 0.2868352,
+            "location": "classpath:features/verifyUsers.feature:34"
+          }
+        ]
+      },
+      {
+        "name": "I perform GET operation to get User data with id \"5\"",
+        "aggregatedDurations": {
+          "median": 0.2758466,
+          "average": 0.2758466
+        },
+        "durations": [
+          {
+            "duration": 0.2758466,
+            "location": "classpath:features/verifyUsers.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should get a valid schema And body parameters in User response",
+    "steps": [
+      {
+        "name": "I should get a valid schema And body parameters in User response",
+        "aggregatedDurations": {
+          "median": 0.02198705,
+          "average": 0.02198705
+        },
+        "durations": [
+          {
+            "duration": 0.0249879,
+            "location": "classpath:features/verifyUsers.feature:35"
+          },
+          {
+            "duration": 0.0189862,
+            "location": "classpath:features/verifyUsers.feature:35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform put operation to update User\u0027s detail with id {string}",
+    "steps": [
+      {
+        "name": "I perform put operation to update User\u0027s detail with id \"1\"",
+        "aggregatedDurations": {
+          "median": 0.7730087,
+          "average": 0.7730087
+        },
+        "durations": [
+          {
+            "duration": 0.7730087,
+            "location": "classpath:features/verifyUsers.feature:43"
+          }
+        ]
+      },
+      {
+        "name": "I perform put operation to update User\u0027s detail with id \"89\"",
+        "aggregatedDurations": {
+          "median": 0.7642105,
+          "average": 0.7642105
+        },
+        "durations": [
+          {
+            "duration": 0.7642105,
+            "location": "classpath:features/verifyUsers.feature:62"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform PATCH operation to update some of the User\u0027s detail with id {string}",
+    "steps": [
+      {
+        "name": "I perform PATCH operation to update some of the User\u0027s detail with id \"3\"",
+        "aggregatedDurations": {
+          "median": 0.765566,
+          "average": 0.765566
+        },
+        "durations": [
+          {
+            "duration": 0.765566,
+            "location": "classpath:features/verifyUsers.feature:53"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform put operation to update User\u0027s detail with invalid data and valid id {string}",
+    "steps": [
+      {
+        "name": "I perform put operation to update User\u0027s detail with invalid data and valid id \"4\"",
+        "aggregatedDurations": {
+          "median": 0.8106049,
+          "average": 0.8106049
+        },
+        "durations": [
+          {
+            "duration": 0.8106049,
+            "location": "classpath:features/verifyUsers.feature:71"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform put operation to update User\u0027s detail with All Null data but valid id {string}",
+    "steps": [
+      {
+        "name": "I perform put operation to update User\u0027s detail with All Null data but valid id \"4\"",
+        "aggregatedDurations": {
+          "median": 0.761565,
+          "average": 0.761565
+        },
+        "durations": [
+          {
+            "duration": 0.761565,
+            "location": "classpath:features/verifyUsers.feature:80"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform GET operation to get a single User data from id {string}",
+    "steps": [
+      {
+        "name": "I perform GET operation to get a single User data from id \"1\"",
+        "aggregatedDurations": {
+          "median": 0.2818702,
+          "average": 0.2818702
+        },
+        "durations": [
+          {
+            "duration": 0.2818702,
+            "location": "classpath:features/verifyUsers.feature:88"
+          }
+        ]
+      },
+      {
+        "name": "I perform GET operation to get a single User data from id \"3\"",
+        "aggregatedDurations": {
+          "median": 0.2848381,
+          "average": 0.2848381
+        },
+        "durations": [
+          {
+            "duration": 0.2848381,
+            "location": "classpath:features/verifyUsers.feature:88"
+          }
+        ]
+      },
+      {
+        "name": "I perform GET operation to get a single User data from id \"#%?\"",
+        "aggregatedDurations": {
+          "median": 0.2988264,
+          "average": 0.2988264
+        },
+        "durations": [
+          {
+            "duration": 0.2988264,
+            "location": "classpath:features/verifyUsers.feature:110"
+          }
+        ]
+      },
+      {
+        "name": "I perform GET operation to get a single User data from id \"(*\u0026\u0026^*^%^\"",
+        "aggregatedDurations": {
+          "median": 0.2729877,
+          "average": 0.2729877
+        },
+        "durations": [
+          {
+            "duration": 0.2729877,
+            "location": "classpath:features/verifyUsers.feature:110"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the User data must be returned",
+    "steps": [
+      {
+        "name": "the User data must be returned",
+        "aggregatedDurations": {
+          "median": 0.11943835,
+          "average": 0.11943835
+        },
+        "durations": [
+          {
+            "duration": 0.1469292,
+            "location": "classpath:features/verifyUsers.feature:91"
+          },
+          {
+            "duration": 0.0919475,
+            "location": "classpath:features/verifyUsers.feature:91"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I perform GET operation to get a single User data with invalid id {string}",
+    "steps": [
+      {
+        "name": "I perform GET operation to get a single User data with invalid id \"test\"",
+        "aggregatedDurations": {
+          "median": 0.2639995,
+          "average": 0.2639995
+        },
+        "durations": [
+          {
+            "duration": 0.2639995,
+            "location": "classpath:features/verifyUsers.feature:99"
+          }
+        ]
+      },
+      {
+        "name": "I perform GET operation to get a single User data with invalid id \"100000789\"",
+        "aggregatedDurations": {
+          "median": 0.2719242,
+          "average": 0.2719242
+        },
+        "durations": [
+          {
+            "duration": 0.2719242,
+            "location": "classpath:features/verifyUsers.feature:99"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the data returned must be null",
+    "steps": [
+      {
+        "name": "the data returned must be null",
+        "aggregatedDurations": {
+          "median": 0.02348465,
+          "average": 0.02348465
+        },
+        "durations": [
+          {
+            "duration": 0.0149909,
+            "location": "classpath:features/verifyUsers.feature:102"
+          },
+          {
+            "duration": 0.0319784,
+            "location": "classpath:features/verifyUsers.feature:102"
+          }
+        ]
+      }
+    ]
+  }
+]

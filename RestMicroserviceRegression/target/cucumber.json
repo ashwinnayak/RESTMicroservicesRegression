@@ -1,0 +1,2286 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-06T17:39:51.608Z",
+        "line": 4,
+        "name": "Create a Comment using a post request",
+        "description": "",
+        "id": "comment-tests:-test-comment-endpoint;create-a-comment-using-a-post-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5240897100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform post operation to create a Comment",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iPeformPostOperationToCreateAComment()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49972900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the status response code must be 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1771111900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the returned post data must contain the Id",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.theReturnedPostDataMustContainId()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the status in the body must be \"Created\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Created\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@commentPositiveTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@commentTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:39:58.948Z",
+        "line": 16,
+        "name": "Validate Schema of a Comment",
+        "description": "",
+        "id": "comment-tests:-test-comment-endpoint;validate-schema-of-a-comment;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 966922800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I perform GET operation to get Comment data by id \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetCommentDataById(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2197622600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should get a valid schema And body parameters should be valid",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iShouldGetValidSchemaInResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@commentPositiveTest"
+          },
+          {
+            "name": "@schemaTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@commentTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:02.221Z",
+        "line": 17,
+        "name": "Validate Schema of a Comment",
+        "description": "",
+        "id": "comment-tests:-test-comment-endpoint;validate-schema-of-a-comment;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 880070500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I perform GET operation to get Comment data by id \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetCommentDataById(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39977800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should get a valid schema And body parameters should be valid",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iShouldGetValidSchemaInResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@commentPositiveTest"
+          },
+          {
+            "name": "@schemaTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@commentTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:03.194Z",
+        "line": 26,
+        "name": "Validate the number of records in response of Comments",
+        "description": "",
+        "id": "comment-tests:-test-comment-endpoint;validate-the-number-of-records-in-response-of-comments;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 352301000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I perform GET operation to get All Comments",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetComments()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1991900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 411752200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the response should have 500 number of records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theResponseRecordCountMustBe(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@commentPositiveTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@commentTests"
+          },
+          {
+            "name": "@recordCount"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:03.986Z",
+        "line": 59,
+        "name": "Delete comment with id",
+        "description": "",
+        "id": "comment-tests:-test-comment-endpoint;delete-comment-with-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 865781500,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I perform delete operation on a comment with id \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformDeleteOperationOnACommentWithId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1999300,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999800,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "the status in the body must be \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deleteCommentTest"
+          },
+          {
+            "name": "@deleteCommentPositiveTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@commentTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:04.896Z",
+        "line": 60,
+        "name": "Delete comment with id",
+        "description": "",
+        "id": "comment-tests:-test-comment-endpoint;delete-comment-with-id;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 778689100,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I perform delete operation on a comment with id \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformDeleteOperationOnACommentWithId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2998300,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "the status in the body must be \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deleteCommentTest"
+          },
+          {
+            "name": "@deleteCommentPositiveTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@commentTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:05.694Z",
+        "line": 69,
+        "name": "Test delete Comment with invalid/null id",
+        "description": "",
+        "id": "comment-tests:-test-comment-endpoint;test-delete-comment-with-invalid/null-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 759563700,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I perform delete operation on a comment with id \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformDeleteOperationOnACommentWithId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15992100,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deleteCommentTest"
+          },
+          {
+            "name": "@deleteCommentNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@commentTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:06.482Z",
+        "line": 70,
+        "name": "Test delete Comment with invalid/null id",
+        "description": "",
+        "id": "comment-tests:-test-comment-endpoint;test-delete-comment-with-invalid/null-id;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 544945500,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I perform delete operation on a comment with id \"%$^#\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"%$^#\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformDeleteOperationOnACommentWithId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code (\u003c404\u003e or \u003c400\u003e or \u003c301\u003e or \u003c500\u003e) but was \u003c200\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned(stepDefLibrary.java:191)\r\n\tat ✽.an error status code must be returned(classpath:features/verifyComments.feature:66)\r\n",
+              "duration": 64962500,
+              "status": "failed"
+            },
+            "line": 66,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deleteCommentTest"
+          },
+          {
+            "name": "@deleteCommentNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@commentTests"
+          }
+        ]
+      }
+    ],
+    "name": "Comment Tests: Test Comment Endpoint",
+    "description": "",
+    "id": "comment-tests:-test-comment-endpoint",
+    "keyword": "Feature",
+    "uri": "classpath:features/verifyComments.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-06T17:40:07.252Z",
+        "line": 4,
+        "name": "Create a Post using a post request",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;create-a-post-using-a-post-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 928466900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform post operation to create a Post",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iPeformPostOperationToCreateAPost()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the status response code must be 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36979600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the returned post data must contain the Id",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.theReturnedPostDataMustContainId()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the status in the body must be \"Created\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Created\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@createPostTest"
+          },
+          {
+            "name": "@createPostPositiveTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@postTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:08.273Z",
+        "line": 16,
+        "name": "Validate Schema of a Post record",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;validate-schema-of-a-post-record;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 315819800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I perform GET operation to get Post data by id \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetPostDataById(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22987000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should get a valid schema And body parameters in Post response",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iShouldGetValidSchemaInPostResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@postTests"
+          },
+          {
+            "name": "@schemaTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:08.638Z",
+        "line": 17,
+        "name": "Validate Schema of a Post record",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;validate-schema-of-a-post-record;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 332808800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I perform GET operation to get Post data by id \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetPostDataById(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11992400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should get a valid schema And body parameters in Post response",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iShouldGetValidSchemaInPostResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@postTests"
+          },
+          {
+            "name": "@schemaTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:08.998Z",
+        "line": 26,
+        "name": "Validate the number of records in response of Posts",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;validate-the-number-of-records-in-response-of-posts;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 268910900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I perform GET operation to get All Posts",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetAllPosts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53969500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the response should have 100 number of records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theResponseRecordCountMustBe(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@postTests"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@recordCount"
+          },
+          {
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:09.335Z",
+        "line": 43,
+        "name": "Create a Post with invalid parameters",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;create-a-post-with-invalid-parameters",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 803702600,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I perform post operation to create a post record with invalid parameters",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iPeformPostOperationToCreateAPostWithInvalidParams()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code is \u003c400\u003e but was \u003c201\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(stepDefLibrary.java:85)\r\n\tat ✽.the status response code must be 400(classpath:features/verifyPosts.feature:45)\r\n",
+              "duration": 4996100,
+              "status": "failed"
+            },
+            "line": 45,
+            "name": "the status response code must be 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@createPostTest"
+          },
+          {
+            "name": "@createPostNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@postTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:10.269Z",
+        "line": 49,
+        "name": "Create a Post with with null parameters",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;create-a-post-with-with-null-parameters",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 792542900,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I perform post operation to create a Post with null parameters",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iPeformPostOperationToCreateAPostWithNullParams()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code is \u003c400\u003e but was \u003c201\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(stepDefLibrary.java:85)\r\n\tat ✽.the status response code must be 400(classpath:features/verifyPosts.feature:51)\r\n",
+              "duration": 1998700,
+              "status": "failed"
+            },
+            "line": 51,
+            "name": "the status response code must be 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@createPostTest"
+          },
+          {
+            "name": "@createPostNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@postTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:11.085Z",
+        "line": 61,
+        "name": "Update A Post with valid data",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;update-a-post-with-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1097485900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I perform put operation to update a Post with id \"23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"23\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformPutOperationToUpdateAPost(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996800,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 998600,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "the status in the body must be \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30982300,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "the returned updated data must contain the input body data \"23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"23\"",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theReturnedUpdatedDataMustContainTheInputBodyData(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePostTest"
+          },
+          {
+            "name": "@updatePostPositiveTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@postTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:12.225Z",
+        "line": 70,
+        "name": "Update a Post with invalid or null id in path parameter",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;update-a-post-with-invalid-or-null-id-in-path-parameter;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 848848200,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I perform put operation to update a Post with invalid id \"*\u0026^\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"*\u0026^\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformPutOperationToUpdateAPostForInvalidId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10992800,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePostTest"
+          },
+          {
+            "name": "@updatePostNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@postTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:13.104Z",
+        "line": 71,
+        "name": "Update a Post with invalid or null id in path parameter",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;update-a-post-with-invalid-or-null-id-in-path-parameter;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 760560500,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I perform put operation to update a Post with invalid id \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformPutOperationToUpdateAPostForInvalidId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePostTest"
+          },
+          {
+            "name": "@updatePostNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@postTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:13.877Z",
+        "line": 80,
+        "name": "Update a Post with valid id and invalid json data",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;update-a-post-with-valid-id-and-invalid-json-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 770807300,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I perform put operation to update a Post for Valid id \"21\" And with invalid json data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"21\"",
+                  "offset": 54
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformPutOperationToUpdateAPostWithValidIdAndInvalidParams(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code (\u003c404\u003e or \u003c400\u003e or \u003c301\u003e or \u003c500\u003e) but was \u003c200\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat jdk.internal.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned(stepDefLibrary.java:191)\r\n\tat ✽.an error status code must be returned(classpath:features/verifyPosts.feature:77)\r\n",
+              "duration": 3997000,
+              "status": "failed"
+            },
+            "line": 77,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePostTest"
+          },
+          {
+            "name": "@updatePostNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@postTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:14.687Z",
+        "line": 90,
+        "name": "Update a Post with valid id and null json data",
+        "description": "",
+        "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts;update-a-post-with-valid-id-and-null-json-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 771719300,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I perform put operation to update a Post for id \"21\" with null parameters in json data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"21\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformPutOperationToUpdatePostForIdWithNullParametersInJsonData(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code (\u003c404\u003e or \u003c400\u003e or \u003c301\u003e or \u003c500\u003e) but was \u003c200\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat jdk.internal.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned(stepDefLibrary.java:191)\r\n\tat ✽.an error status code must be returned(classpath:features/verifyPosts.feature:86)\r\n",
+              "duration": 999400,
+              "status": "failed"
+            },
+            "line": 86,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePostTest"
+          },
+          {
+            "name": "@updatePostNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@postTests"
+          }
+        ]
+      }
+    ],
+    "name": "Posts Tests: Test all the POST/PUT requests for creating Posts",
+    "description": "",
+    "id": "posts-tests:-test-all-the-post/put-requests-for-creating-posts",
+    "keyword": "Feature",
+    "uri": "classpath:features/verifyPosts.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-06T17:40:15.475Z",
+        "line": 4,
+        "name": "Get all User data",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;get-all-user-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 272843700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform GET operation to get all User data",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetAllUserData()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1999100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the status in the body must be \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114932400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "all the User data must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.allTheEmployeesDataMustBeReturned()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getAllUserTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@usersTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:15.891Z",
+        "line": 17,
+        "name": "Validate the count of records in response of All Users",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;validate-the-count-of-records-in-response-of-all-users;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 746071400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I perform GET operation to get all User data",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetAllUserData()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37977000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the response should have 10 number of records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theResponseRecordCountMustBe(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getAllUserTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@usersTests"
+          },
+          {
+            "name": "@recordCount"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:16.690Z",
+        "line": 38,
+        "name": "Validate Schema of a User record",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;validate-schema-of-a-user-record;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 286835200,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I perform GET operation to get User data with id \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetUserDataById(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24987900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I should get a valid schema And body parameters in User response",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iShouldGetValidSchemaInUserResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userTests"
+          },
+          {
+            "name": "@schemaTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:17.012Z",
+        "line": 39,
+        "name": "Validate Schema of a User record",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;validate-schema-of-a-user-record;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 275846600,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I perform GET operation to get User data with id \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetUserDataById(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18986200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I should get a valid schema And body parameters in User response",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.iShouldGetValidSchemaInUserResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userTests"
+          },
+          {
+            "name": "@schemaTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:17.318Z",
+        "line": 49,
+        "name": "Update A User\u0027s Details with valid data",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;update-a-user-s-details-with-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 773008700,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I perform put operation to update User\u0027s detail with id \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformPutOperationToUpdateAUserDetail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1006100,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "the status in the body must be \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42978600,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "the returned updated data must contain the input body data \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theReturnedUpdatedDataMustContainTheInputBodyData(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userTests"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:18.156Z",
+        "line": 58,
+        "name": "Execute Patch on certain params of the User\u0027s Details with valid data",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;execute-patch-on-certain-params-of-the-user-s-details-with-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 765566000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I perform PATCH operation to update some of the User\u0027s detail with id \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 70
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformPatchOperationToUpdateAUserDetail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 994100,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "the status in the body must be \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userTests"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:18.934Z",
+        "line": 66,
+        "name": "Update A User\u0027s Details with Invalid ID",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;update-a-user-s-details-with-invalid-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 764210500,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I perform put operation to update User\u0027s detail with id \"89\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"89\"",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformPutOperationToUpdateAUserDetail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1996000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userTests"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:19.715Z",
+        "line": 75,
+        "name": "Update A User\u0027s Details with Invalid data",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;update-a-user-s-details-with-invalid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 810604900,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I perform put operation to update User\u0027s detail with invalid data and valid id \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4\"",
+                  "offset": 79
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformPutOperationToUpdateAUserDetailWithInvalidData(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code (\u003c404\u003e or \u003c400\u003e or \u003c301\u003e or \u003c500\u003e) but was \u003c200\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat jdk.internal.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat jdk.internal.reflect.GeneratedMethodAccessor152.invoke(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned(stepDefLibrary.java:191)\r\n\tat ✽.an error status code must be returned(classpath:features/verifyUsers.feature:72)\r\n",
+              "duration": 2996900,
+              "status": "failed"
+            },
+            "line": 72,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userTests"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:20.561Z",
+        "line": 84,
+        "name": "Update A User\u0027s Details with All Null data",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;update-a-user-s-details-with-all-null-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 761565000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "I perform put operation to update User\u0027s detail with All Null data but valid id \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4\"",
+                  "offset": 80
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformPutOperationToUpdateAUserDetailWithNullData(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code (\u003c404\u003e or \u003c400\u003e or \u003c301\u003e or \u003c500\u003e) but was \u003c200\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat jdk.internal.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat jdk.internal.reflect.GeneratedMethodAccessor152.invoke(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned(stepDefLibrary.java:191)\r\n\tat ✽.an error status code must be returned(classpath:features/verifyUsers.feature:81)\r\n",
+              "duration": 999500,
+              "status": "failed"
+            },
+            "line": 81,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userTests"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:21.338Z",
+        "line": 94,
+        "name": "Get a single User data using id",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;get-a-single-user-data-using-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 281870200,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I perform GET operation to get a single User data from id \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetASingleUserDataFromId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 969700,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "the status in the body must be \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146929200,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "the User data must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.theUserDataMustBeReturned()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getSingleUserTest"
+          },
+          {
+            "name": "@getSingleUserPositiveTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@usersTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:21.780Z",
+        "line": 95,
+        "name": "Get a single User data using id",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;get-a-single-user-data-using-id;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 284838100,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I perform GET operation to get a single User data from id \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetASingleUserDataFromId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10995500,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "the status response code must be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusResponseCodeMustBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 996700,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "the status in the body must be \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91947500,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "the User data must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.theUserDataMustBeReturned()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getSingleUserTest"
+          },
+          {
+            "name": "@getSingleUserPositiveTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@usersTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:22.180Z",
+        "line": 105,
+        "name": "When id consisting of alphabets/non existing ids are passed to the get API request for single employee",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;when-id-consisting-of-alphabets/non-existing-ids-are-passed-to-the-get-api-request-for-single-employee;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 263999500,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "I perform GET operation to get a single User data with invalid id \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test\"",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetASingleUserDataWithInvalidId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997800,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "the status in the body must be \"Not Found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Not Found\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14990900,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "the data returned must be null",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.theDataReturnedMustBeNull()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getSingleUserTest"
+          },
+          {
+            "name": "@getSingleUserNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@usersTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:22.468Z",
+        "line": 106,
+        "name": "When id consisting of alphabets/non existing ids are passed to the get API request for single employee",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;when-id-consisting-of-alphabets/non-existing-ids-are-passed-to-the-get-api-request-for-single-employee;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 271924200,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "I perform GET operation to get a single User data with invalid id \"100000789\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100000789\"",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetASingleUserDataWithInvalidId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "the status in the body must be \"Not Found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Not Found\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.theStatusInTheBodyMustBe(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31978400,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "the data returned must be null",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.theDataReturnedMustBeNull()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getSingleUserTest"
+          },
+          {
+            "name": "@getSingleUserNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@usersTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:22.783Z",
+        "line": 114,
+        "name": "When special character are passed as ID in the get API request for single User",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;when-special-character-are-passed-as-id-in-the-get-api-request-for-single-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 298826400,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "I perform GET operation to get a single User data from id \"#%?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"#%?\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetASingleUserDataFromId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getSingleUserTest"
+          },
+          {
+            "name": "@getSingleUserNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@usersTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-06T17:40:23.091Z",
+        "line": 115,
+        "name": "When special character are passed as ID in the get API request for single User",
+        "description": "",
+        "id": "users-tests:-test-all-the-get-requests-for-user-data;when-special-character-are-passed-as-id-in-the-get-api-request-for-single-user;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 272987700,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "I perform GET operation to get a single User data from id \"(*\u0026\u0026^*^%^\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"(*\u0026\u0026^*^%^\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.stepDefLibrary.iPerformGETOperationToGetASingleUserDataFromId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1005700,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "an error status code must be returned",
+            "match": {
+              "location": "stepDefinitions.stepDefLibrary.anErrorStatusCodeMustBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getSingleUserTest"
+          },
+          {
+            "name": "@getSingleUserNegativeTest"
+          },
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@usersTests"
+          }
+        ]
+      }
+    ],
+    "name": "Users Tests: Test all the GET requests for User data",
+    "description": "",
+    "id": "users-tests:-test-all-the-get-requests-for-user-data",
+    "keyword": "Feature",
+    "uri": "classpath:features/verifyUsers.feature",
+    "tags": []
+  }
+]

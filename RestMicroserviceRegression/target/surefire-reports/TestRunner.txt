@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner
+-------------------------------------------------------------------------------
+Tests run: 34, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 38.401 s <<< FAILURE! - in TestRunner
+Test delete Comment with invalid/null id #2(Comment Tests: Test Comment Endpoint)  Time elapsed: 1.549 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code (<404> or <400> or <301> or <500>) but was <200>.
+
+
+Create a Post with invalid parameters(Posts Tests: Test all the POST/PUT requests for creating Posts)  Time elapsed: 1.33 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code is <400> but was <201>.
+
+
+Create a Post with with null parameters(Posts Tests: Test all the POST/PUT requests for creating Posts)  Time elapsed: 0.772 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code is <400> but was <201>.
+
+
+Update a Post with valid id and invalid json data(Posts Tests: Test all the POST/PUT requests for creating Posts)  Time elapsed: 1.141 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code (<404> or <400> or <301> or <500>) but was <200>.
+
+
+Update a Post with valid id and null json data(Posts Tests: Test all the POST/PUT requests for creating Posts)  Time elapsed: 0.96 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code (<404> or <400> or <301> or <500>) but was <200>.
+
+
+Update A User's Details with Invalid data(Users Tests: Test all the GET requests for User data)  Time elapsed: 1.311 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code (<404> or <400> or <301> or <500>) but was <200>.
+
+
+Update A User's Details with All Null data(Users Tests: Test all the GET requests for User data)  Time elapsed: 0.957 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code (<404> or <400> or <301> or <500>) but was <200>.
+
+
